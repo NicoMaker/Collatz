@@ -16,10 +16,7 @@ function CalcolaCollatz() {
     }
 }
 
-function InserisciNumero() {
-    let numero = parseInt(document.getElementById("numero").value);
-    return numero;
-}
+let InserisciNumero = () => parseInt(document.getElementById("numero").value);
 
 function CalcolaRisultato(numero) {
 

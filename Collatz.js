@@ -1,4 +1,4 @@
-document.getElementById("bar-chart").style.display = "none";
+document.getElementById("line-chart").style.display = "none";
 document.getElementById("img").style.display = "block";
 
 let dati = {
@@ -22,10 +22,10 @@ function CalcolaCollatz() {
         document.getElementById("passaggi").innerHTML = stampapassaggi;
         document.getElementById("risultato").innerHTML = StampaRisultato;
 
-        document.getElementById("bar-chart").style.display = "none";
+        document.getElementById("line-chart").style.display = "none";
         document.getElementById("img").style.display = "block";
     } else {
-        document.getElementById("bar-chart").style.display = "block";
+        document.getElementById("line-chart").style.display = "block";
         document.getElementById("img").style.display = "none";
 
         let risultato = CalcolaRisultato(numero);
@@ -88,7 +88,7 @@ function CalcolaRisultato(numero) {
         }
     };
 
-    let ctx = document.getElementById('bar-chart').getContext('2d');
+    let ctx = document.getElementById('line-chart').getContext('2d');
     myChart = new Chart(ctx, config);
 
     document.getElementById("img").style.display = "none";

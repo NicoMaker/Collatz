@@ -7,11 +7,11 @@
     <title>Collatz</title>
     <link rel="stylesheet" href="StyleCollatz.css" />
     <link rel="icon" href="Collatz.png" type="image/jpg">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Collatz.js" defer></script>
 </head>
 
 <body>
-    <script src="Collatz.js"></script>
-
     <h1>Congettura di Collatz</h1>
 
     <input type="number" id="numero" placeholder="Inserisci numero">
@@ -23,10 +23,10 @@
     <br>
     <br>
     <div id="passaggi"></div>
-    <img src="Collatz.png">
+    <canvas id="bar-chart"></canvas>
+    <img id="img" src="Collatz.png">
     <br>
     <div id="risultato"></div>
-
 </body>
 
 </html>

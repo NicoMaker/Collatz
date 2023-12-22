@@ -34,6 +34,9 @@ button {
     background: linear-gradient(to right, #79E0EE, #B1AFFF, #79E0EE);
 }
 
+canvas{
+    background-color: white;
+}
 img {
     display: block;
     margin: 0 auto;

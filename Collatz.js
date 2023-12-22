@@ -5,7 +5,7 @@ let dati = {
     labels: [],
     datasets: [{
         label: 'Dati Collatz',
-        borderWidth: 5,
+        borderWidth: 1,
         data: []
     }],
 };

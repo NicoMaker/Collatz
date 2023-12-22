@@ -5,7 +5,7 @@ let dati = {
     labels: [],
     datasets: [{
         label: 'Dati Collatz',
-        borderWidth: 1,
+        borderWidth: 5,
         data: []
     }],
 };
@@ -73,12 +73,11 @@ function CalcolaRisultato(numero) {
 
     document.getElementById("passaggi").innerHTML = stampaHTML;
 
-    if (myChart) {
+    if (myChart)
         myChart.destroy();
-    }
 
     let config = {
-        type: 'bar',
+        type: 'line',
         data: dati,
         options: {
             scales: {
